@@ -1,5 +1,6 @@
 # ToxicComments
 Analytics work on Kaggle Toxic Comments Analysis
+This is some of the code I developed to take on the Kaggle Toxic Comments Classification challenge with my group as part of our Masters' capstone project. Scikit-learn techniques were utilized as well, however that was not my part of the project.
 
 Bokeh EDA visualization can be run with 'bokeh serve --show bokeh_interactive.py'
 
