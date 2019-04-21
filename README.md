@@ -5,7 +5,7 @@ Bokeh EDA visualization can be run with 'bokeh serve --show bokeh_interactive.py
 
 tca.py contains data preparation (text preparation, tokenization, vectorization) and EDA tools. Note that the vectorize_text() function in the ToxicCommentsAnalysis object is not fully functional as support for doc2vec has been added and is not working quite right yet.
 
-models.py contains Keras model (RNN, CNN, ELMo) building and training functions. 
+models.py contains Keras model (RNN, CNN, ELMo) building and training functions. These models do include auxiliary input support for doc2vec representations, however I am stil attempting to identify optimal parameters for the doc2vec model, a time-consuming process on this data set.
 embeddingtools.py contains tools to develop embeddings of various flavors (Word2Vec custom trained on the corpus, GLoVe of user-specified dimensionality, or spaCy's vectors).
 batchtrain.py contains the grid search mechanisms. These models were trained on Google Colab notebooks to leverage GPU processing power.
 
